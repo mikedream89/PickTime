@@ -31,25 +31,22 @@
 - TYPE_HM--时、分
 
 ### how to use
-
- - **Add it in your root build.gradle at the end of repositories:**
-
-```
-	    allprojects {
-		   repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	    }
-```
-
+Gradle:
  -  **Add the dependency**
 ```sh
 	dependencies {
-	        compile 'com.github.codbking:PickTime:v1.0.1'
+	        compile 'com.codertta:timewiget:1.0.0'
 	}
 ```
-
+Maven:
+```
+<dependency>
+  <groupId>com.codertta</groupId>
+  <artifactId>timewiget</artifactId>
+  <version>1.0.0</version>
+  <type>pom</type>
+</dependency>
+```
  -  **java**
 ```java
         DatePickDialog dialog = new DatePickDialog(this);
